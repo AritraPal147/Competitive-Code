@@ -8,6 +8,7 @@ int main(){
     
     int N, K, i, A[100000];
     bool flag = false;
+    cout<<":";
     cin>>N>>K;
     for (i=0; i<N; i++){
         cin>>A[i];
