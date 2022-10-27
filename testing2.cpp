@@ -14,11 +14,11 @@ class A{
         }
 };
 
-class B:public A{
+class B{
     protected:
         int b;
     public:
-        B(int a1, int b1):A(a1){
+        B(int b1){
             b = b1;
         }
 
@@ -27,11 +27,11 @@ class B:public A{
         }
 };
 
-class C: public B{
+class C: public A, B{
     protected:
         int c;
     public:
-        C(int a1, int b1, int c1):B(a1, b1){
+        C(int a1, int b1, int c1):A(a1),B(b1){
             c = c1;
         }
 
